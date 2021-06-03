@@ -1,0 +1,25 @@
+<div class="converter">
+  <header>
+    <h1>{{ firstCurrency }}/{{ secondCurrency }}</h1>
+  </header>
+  <form (submit)="convertCurrency()">
+    <input
+      type="number"
+      name="firstInput"
+      placeholder="{{ firstCurrency }}"
+      [(ngModel)]="firstInput"
+      class="{{ firstInput === 0 ? 'input-error' : '' }}"
+    />
+    <input
+      type="number"
+      name="secondInput"
+      placeholder="{{ secondCurrency }}"
+      [(ngModel)]="secondInput"
+      class="{{ firstInput === 0 ? 'input-error' : '' }}"
+    />
+    <span class="error" *ngIf="firstInput === 0">{{ errorMessage }}</span>
+    <input type="submit" value="Convert" />
+  </form>
+  <button class="swap" (click)="swapValues()">Swap</button>
+  <button class="reset" (click)="resetValues()">Reset</button>
+</div>

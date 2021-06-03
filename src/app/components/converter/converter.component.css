@@ -1,0 +1,57 @@
+input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  appearance: none;
+  border: none;
+  background-color: #f3f3f3;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+input[type="submit"],
+button {
+    display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #FE4880;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+button.swap {
+  background-color: #4872fe;
+}
+
+button.reset {
+  background-color: #fe6c48;
+}
+
+input:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+.error {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: red;
+}
+
+.input-error {
+  border: 1px solid red;
+}
